@@ -137,7 +137,7 @@ removeDuplicates(array: ["Hello", "yes", "yes", "Hello", "World"])
 // https://en.wikipedia.org/wiki/Collatz_conjecture
 func collatz(input: Int) -> Int {
     
-    guard input > 1 else {
+    guard input > 0 else {
         fatalError("Input must be positive.")
     }
     
