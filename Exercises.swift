@@ -1,6 +1,4 @@
 
-import Cocoa
-
 // Printing the running total of a list
 
 func printRunningTotal(list: [Int]) {
@@ -139,7 +137,7 @@ removeDuplicates(array: ["Hello", "yes", "yes", "Hello", "World"])
 // https://en.wikipedia.org/wiki/Collatz_conjecture
 func collatz(input: Int) -> Int {
     
-    if input <= 0 {
+    guard input > 1 else {
         fatalError("Input must be positive.")
     }
     
